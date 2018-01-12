@@ -1,20 +1,21 @@
-#Given an array of integers, return indices of the two numbers such that they add up to a specific target.
+# Local Test Template
+# Manually input
+while True:
+    try:
+        #input_str = raw_input()
 #
-#You may assume that each input would have exactly one solution, and you may not use the same element twice.
+# Input:
 #
-#Example:
-#Given nums = [2, 7, 11, 15], target = 9,
-#Because nums[0] + nums[1] = 2 + 7 = 9,
-#return [0, 1].
-
-class Solution(object):
-    def twoSum(self, nums, target):
-        """
-        :type nums: List[int]
-        :type target: int
-        :rtype: List[int]
-        """
+        nums =  [2, 7, 11, 15]        
+        target = 9       
+        print nums,target
+
+#
+# Content:
+#
+        
         sort_nums = list(nums) #nums(:)
+        print sort_nums
         #sort_nums#.sort()
         nums_len = len(sort_nums)
         result = list()
@@ -28,6 +29,10 @@
                     #result.append(nums.index(sort_nums[j])+1)
                     result.append(j)
                     #nums.remove(sort_nums[j])
-                    return result
-        return "ERROR"
-        
+                    print result
+                    
+            print "ERROR"
+        print "Finished"
+    except:
+        break
+
